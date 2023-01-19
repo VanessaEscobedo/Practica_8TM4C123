@@ -35,7 +35,6 @@ int main(void)
                             Delay_ms(1000);
 
             OLED_YX(3, 0);
-             //OLED_Write_String ("TM4C123");
              OLED_Write_String ("¡SI SE PUEDE!");
                             Delay_ms(1000);
      
@@ -56,9 +55,9 @@ int main(void)
                Delay_ms(1000);
             }
             */
-            
-            OLED_Clear();
-            Delay_ms(100);       
+            /* PARA QUE SE LIMPIE LA PANTALLA CADA 100 ms*/
+            //OLED_Clear();
+            //Delay_ms(100);       
           
    }
 }
