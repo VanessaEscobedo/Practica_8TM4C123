@@ -80,11 +80,13 @@ ${COMPILER}:
 #
 ${COMPILER}/main.axf: ${COMPILER}/main.o
 ${COMPILER}/main.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/main.axf: ${COMPILER}/PLL.o
+${COMPILER}/main.axf: ${COMPILER}/OLED.o
+${COMPILER}/main.axf: ${COMPILER}/I2C3.o
 ${COMPILER}/main.axf: main.ld
 SCATTERgcc_main=main.ld
 ENTRY_main=ResetISR
 CFLAGSgcc=-DTARGET_IS_TM4C123_RB1
-
 #
 # Include the automatically generated dependency files.
 #

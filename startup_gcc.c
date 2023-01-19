@@ -23,6 +23,10 @@
 //*****************************************************************************
 
 #include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <stdio.h>
 #include "lib/hw_nvic.h"
 #include "lib/hw_types.h"
 
